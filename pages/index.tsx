@@ -99,23 +99,23 @@ export default function Home() {
         >
           <nav className="flex items-center py-4 px-5 z-10">
             <Logo />
-            <a href="/" className="text-2xl ml-2">
+            <a target="_blank" href="/" className="text-2xl ml-2">
               ACEBOT
             </a>
 
             <ul className="ml-auto flex items-center gap-5">
               <li>
-                <a href="">
+                <a target="_blank" href="">
                   <NavTwitter />
                 </a>
               </li>
               <li>
-                <a href="">
+                <a target="_blank" href="">
                   <NavTelegram />
                 </a>
               </li>
               <li>
-                <a href="">
+                <a target="_blank" href="">
                   <NavGitbook />
                 </a>
               </li>
@@ -135,6 +135,7 @@ export default function Home() {
           </h1>
 
           <a
+            target="_blank"
             href=""
             className="m-auto flex items-center justify-center rounded-full mt-6 w-40 h-11 gap-2 text-xl bg-play-button"
           >
@@ -249,22 +250,22 @@ export default function Home() {
           MADE BY DEGENS AND SAVVY DEVS 🍼
           <ul className="ml-auto flex items-center gap-5">
             <li>
-              <a href="">
+              <a target="_blank" href="">
                 <FooterEtherscan />
               </a>
             </li>
             <li>
-              <a href="">
+              <a target="_blank" href="">
                 <FooterTwitter />
               </a>
             </li>
             <li>
-              <a href="">
+              <a target="_blank" href="">
                 <FooterTelegram />
               </a>
             </li>
             <li>
-              <a href="">
+              <a target="_blank" href="">
                 <FooterGitbook />
               </a>
             </li>

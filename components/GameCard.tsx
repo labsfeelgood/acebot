@@ -17,6 +17,7 @@ export function GameCard({ bgImage, disabled, gameName }: GameCardProps) {
         </p>
       ) : (
         <a
+          target="_blank"
           href=""
           className="bg-black text-xl absolute bottom-0 left-0 right-0 text-center p-4"
         >
