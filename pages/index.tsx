@@ -154,7 +154,7 @@ export default function Home() {
 
         {/* Games */}
 
-        <div className="flex gap-12 items-center justify-center left-0 right-0 -mt-20 absolute">
+        <div className="flex flex-wrap gap-12 items-center justify-center left-0 right-0 -mt-20 absolute">
           {GAMES.map((game) => (
             <GameCard key={game.gameName} {...game} />
           ))}
@@ -163,7 +163,7 @@ export default function Home() {
         {/* Center */}
 
         <div className="bg-[url('/plus-pattern.svg')] bg-no-repeat flex flex-col pt-44 pb-24">
-          <div className="flex my-40">
+          <div className="flex my-40 flex-wrap">
             <div className="flex-1 flex flex-col items-center justify-center">
               <h2 className="text-primary text-4xl text-left drop-shadow-3xl w-[32rem]">
                 REVENUE SHARING
@@ -175,11 +175,23 @@ export default function Home() {
               </p>
             </div>
 
-            <Image src="/revenue-sharing.svg" alt="" width={600} height={350} />
+            <Image
+              loading="lazy"
+              src="/revenue-sharing.svg"
+              alt=""
+              width={600}
+              height={350}
+            />
           </div>
 
-          <div className="flex">
-            <Image src="/provably-fair.svg" alt="" width={600} height={350} />
+          <div className="flex flex-wrap-reverse">
+            <Image
+              loading="lazy"
+              src="/provably-fair.svg"
+              alt=""
+              width={600}
+              height={350}
+            />
 
             <div className="flex-1 flex flex-col items-center justify-center">
               <h2 className="text-primary text-4xl text-left drop-shadow-3xl w-[32rem]">
@@ -195,7 +207,7 @@ export default function Home() {
 
         {/* Infos */}
 
-        <div className="bg-primary bg-[url('/box-pattern.svg')] bg-no-repeat p-16 flex items-center justify-center gap-20">
+        <div className="bg-primary bg-[url('/box-pattern.svg')] bg-no-repeat p-16 max-[640px]:p-8 flex items-center flex-wrap justify-center gap-20">
           {INFOS.map((info) => (
             <InfoCard key={info.imgSrc} {...info} />
           ))}
@@ -207,7 +219,13 @@ export default function Home() {
           <div className="bg-[url('/dot-pattern.svg')] bg-no-repeat w-28 h-72 absolute right-24 top-20" />
 
           <div className="text-2xl flex items-center gap-4">
-            <Image src="/faq-curve.svg" alt="" width={40} height={40} />
+            <Image
+              loading="lazy"
+              src="/faq-curve.svg"
+              alt=""
+              width={40}
+              height={40}
+            />
             <h3 className="drop-shadow-3xl">FAQS</h3>
           </div>
 
@@ -216,6 +234,7 @@ export default function Home() {
               <FAQs {...faq} />
               <div className="max-w-5xl overflow-hidden">
                 <Image
+                  loading="lazy"
                   src="/footer-top-border.svg"
                   alt=""
                   width={1000}
@@ -230,6 +249,7 @@ export default function Home() {
             ques="Wen token?"
             answ={
               <Image
+                loading="lazy"
                 src="meme.svg"
                 alt=""
                 width={230}
@@ -243,10 +263,16 @@ export default function Home() {
         {/* Footer */}
 
         <div className="overflow-hidden px-2">
-          <Image src="/footer-top-border.svg" alt="" width={1500} height={4} />
+          <Image
+            loading="lazy"
+            src="/footer-top-border.svg"
+            alt=""
+            width={1500}
+            height={4}
+          />
         </div>
 
-        <footer className="flex text-primary text-lg px-8 py-12">
+        <footer className="flex max-[640px]:items-center max-[640px]:justify-center max-[640px]:text-center text-primary max-[640px]:gap-4 max-[640px]:text-base text-lg px-8 py-12 flex-wrap">
           MADE BY DEGENS AND SAVVY DEVS 🍼
           <ul className="ml-auto flex items-center gap-5">
             <li>

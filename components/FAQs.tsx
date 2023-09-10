@@ -15,10 +15,10 @@ export function FAQs({ ques, answ, hideAnswImg }: FAQsProps) {
     <div
       className={`max-w-5xl flex flex-col py-8 gap-4 ${montserrat.className}`}
     >
-      <p className="text-primary flex gap-2 items-center text-xl">
+      <p className="text-primary flex gap-2 items-center text-xl max-[640px]:text-lg">
         <Image src="/question.svg" alt="" width={40} height={40} /> {ques}
       </p>
-      <p className="flex gap-2 items-center font-semibold text-lg">
+      <p className="flex gap-2 items-center font-semibold text-lg max-[640px]:text-base">
         <Image
           src="/answer.svg"
           alt=""
