@@ -90,7 +90,7 @@ export default function Home() {
         className={`${microgramma.className} max-w-screen-2xl m-auto mb-16 relative overflow-hidden`}
       >
         <div
-          className="bg-[url('/hero-pattern.svg')] bg-no-repeat flex flex-col pb-32"
+          className="bg-[url('/hero-pattern.svg')] bg-no-repeat flex flex-col pb-32 max-[640px]:pb-8"
           style={{
             backgroundSize: "1311.36px 1439px",
             backgroundPositionY: "-366.06px",
@@ -98,52 +98,56 @@ export default function Home() {
           }}
         >
           <nav className="flex items-center py-4 px-5 z-10">
-            <Logo />
-            <a target="_blank" href="/" className="text-2xl ml-2">
+            <Logo className="max-[640px]:w-[32px]" />
+            <a
+              target="_blank"
+              href="/"
+              className="text-2xl max-[640px]:text-base ml-2"
+            >
               ACEBOT
             </a>
 
-            <ul className="ml-auto flex items-center gap-5">
+            <ul className="ml-auto flex items-center gap-5 max-[640px]:gap-2">
               <li>
                 <a target="_blank" href="">
-                  <NavTwitter />
+                  <NavTwitter className="max-[640px]:w-[20px]" />
                 </a>
               </li>
               <li>
                 <a target="_blank" href="">
-                  <NavTelegram />
+                  <NavTelegram className="max-[640px]:w-[20px]" />
                 </a>
               </li>
               <li>
                 <a target="_blank" href="">
-                  <NavGitbook />
+                  <NavGitbook className="max-[640px]:w-[20px]" />
                 </a>
               </li>
             </ul>
           </nav>
 
-          <div className="flex items-center -mt-28">
+          <div className="flex items-center -mt-28 max-[640px]:-mb-16">
             <HeroAceText />
-            <HeroAceBotLogo />
+            <HeroAceBotLogo className="max-[640px]:h-[300px]" />
             <HeroBotText />
           </div>
 
           {/* H1 Text */}
 
-          <h1 className="text-center text-3xl m-auto drop-shadow-3xl -mt-4">
+          <h1 className="text-center text-3xl max-[640px]:text-xl m-auto drop-shadow-3xl -mt-4">
             A <span className="text-primary">CASINO</span> ON TELEGRAM
           </h1>
 
           <a
             target="_blank"
             href=""
-            className="m-auto flex items-center justify-center rounded-full mt-6 w-40 h-11 gap-2 text-xl bg-play-button"
+            className="m-auto flex items-center justify-center rounded-full mt-6 w-40 max-[640px]:w-32 h-11 max-[640px]:h-9 gap-2 text-xl max-[640px]:text-sm bg-play-button"
           >
-            PLAY <PlayTelegram />
+            PLAY <PlayTelegram className="max-[640px]:w-[20px]" />
           </a>
 
           <p
-            className={`m-auto ${montserrat.className} text-base mt-3 font-semibold`}
+            className={`m-auto ${montserrat.className} text-base mt-3 font-semibold max-[640px]:text-xs max-[640px]:text-center`}
           >
             <span className="text-primary">
               Play now to reserve your airdrop -{" "}
@@ -154,7 +158,7 @@ export default function Home() {
 
         {/* Games */}
 
-        <div className="flex flex-wrap gap-12 items-center justify-center left-0 right-0 -mt-20 absolute">
+        <div className="flex flex-wrap gap-12 max-[640px]:gap-8 items-center justify-center left-0 right-0 -mt-20 max-[640px]:mt-0 absolute max-[640px]:static max-[640px]:px-8">
           {GAMES.map((game) => (
             <GameCard key={game.gameName} {...game} />
           ))}
@@ -162,14 +166,14 @@ export default function Home() {
 
         {/* Center */}
 
-        <div className="bg-[url('/plus-pattern.svg')] bg-no-repeat flex flex-col pt-44 pb-24">
-          <div className="flex my-40 flex-wrap">
+        <div className="bg-[url('/plus-pattern.svg')] bg-no-repeat flex flex-col pt-44 max-[640px]:pt-4 pb-24 max-[640px]:pb-8">
+          <div className="flex my-40 max-[640px]:my-8 flex-wrap max-[640px]:px-4">
             <div className="flex-1 flex flex-col items-center justify-center">
-              <h2 className="text-primary text-4xl text-left drop-shadow-3xl w-[32rem]">
+              <h2 className="text-primary text-4xl max-[640px]:text-xl text-left max-[640px]:text-center drop-shadow-3xl w-[32rem] max-[640px]:w-full">
                 REVENUE SHARING
               </h2>
 
-              <p className="max-w-lg text-2xl text-left mt-6">
+              <p className="max-w-lg max-[640px]:max-w-none text-2xl max-[640px]:text-sm text-left max-[640px]:text-center mt-6 max-[640px]:my-4">
                 <span className="text-primary">50%</span> revenue shared with
                 our holders! We flip together fam
               </p>
@@ -184,7 +188,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="flex flex-wrap-reverse">
+          <div className="flex flex-wrap-reverse max-[640px]:px-4">
             <Image
               loading="lazy"
               src="/provably-fair.svg"
@@ -194,11 +198,11 @@ export default function Home() {
             />
 
             <div className="flex-1 flex flex-col items-center justify-center">
-              <h2 className="text-primary text-4xl text-left drop-shadow-3xl w-[32rem]">
+              <h2 className="text-primary text-4xl max-[640px]:text-xl text-left max-[640px]:text-center drop-shadow-3xl w-[32rem] max-[640px]:w-full">
                 PROVABLY FAIR
               </h2>
 
-              <p className="max-w-lg text-2xl text-left mt-6">
+              <p className="max-w-lg max-[640px]:max-w-none text-2xl max-[640px]:text-sm text-left max-[640px]:text-center mt-6 max-[640px]:my-4">
                 ain&apos;t nobody gonna cheat and shit (ChainLink VRF)
               </p>
             </div>
@@ -207,7 +211,7 @@ export default function Home() {
 
         {/* Infos */}
 
-        <div className="bg-primary bg-[url('/box-pattern.svg')] bg-no-repeat p-16 max-[640px]:p-8 flex items-center flex-wrap justify-center gap-20">
+        <div className="bg-primary bg-[url('/box-pattern.svg')] bg-no-repeat p-16 max-[640px]:p-8 flex items-center flex-wrap justify-center gap-20 max-[640px]:gap-12">
           {INFOS.map((info) => (
             <InfoCard key={info.imgSrc} {...info} />
           ))}
@@ -216,7 +220,7 @@ export default function Home() {
         {/* FAQs */}
 
         <div className="flex flex-col px-8 py-12 relative">
-          <div className="bg-[url('/dot-pattern.svg')] bg-no-repeat w-28 h-72 absolute right-24 top-20" />
+          <div className="bg-[url('/dot-pattern.svg')] bg-no-repeat w-28 max-[640px]:w-24 h-72 absolute right-24 top-20" />
 
           <div className="text-2xl flex items-center gap-4">
             <Image
@@ -274,7 +278,7 @@ export default function Home() {
 
         <footer className="flex max-[640px]:items-center max-[640px]:justify-center max-[640px]:text-center text-primary max-[640px]:gap-4 max-[640px]:text-base text-lg px-8 py-12 flex-wrap">
           MADE BY DEGENS AND SAVVY DEVS 🍼
-          <ul className="ml-auto flex items-center gap-5">
+          <ul className="ml-auto max-[640px]:ml-0 flex items-center gap-5">
             <li>
               <a target="_blank" href="">
                 <FooterEtherscan />
