@@ -180,7 +180,7 @@ export default function Home() {
             </div>
 
             <Image
-              loading="lazy"
+              loading="eager"
               src="/revenue-sharing.svg"
               alt=""
               width={600}
@@ -190,7 +190,7 @@ export default function Home() {
 
           <div className="flex flex-wrap-reverse max-[640px]:px-4">
             <Image
-              loading="lazy"
+              loading="eager"
               src="/provably-fair.svg"
               alt=""
               width={600}
@@ -224,7 +224,7 @@ export default function Home() {
 
           <div className="text-2xl flex items-center gap-4">
             <Image
-              loading="lazy"
+              loading="eager"
               src="/faq-curve.svg"
               alt=""
               width={40}
@@ -238,7 +238,7 @@ export default function Home() {
               <FAQs {...faq} />
               <div className="max-w-5xl overflow-hidden">
                 <Image
-                  loading="lazy"
+                  loading="eager"
                   src="/footer-top-border.svg"
                   alt=""
                   width={1000}
@@ -268,7 +268,7 @@ export default function Home() {
 
         <div className="overflow-hidden px-2">
           <Image
-            loading="lazy"
+            loading="eager"
             src="/footer-top-border.svg"
             alt=""
             width={1500}
