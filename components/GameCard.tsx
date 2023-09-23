@@ -32,7 +32,7 @@ export function GameCard({ bgImage, disabled, gameName }: GameCardProps) {
       ) : (
         <a
           target="_blank"
-          href=""
+          href="https://t.me/Fun_AceBot"
           className="bg-black text-xl max-[640px]:text-base absolute bottom-0 left-0 right-0 text-center p-4"
         >
           <span>{gameName} - </span>

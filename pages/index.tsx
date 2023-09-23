@@ -109,17 +109,17 @@ export default function Home() {
 
             <ul className="ml-auto flex items-center gap-5 max-[640px]:gap-2">
               <li>
-                <a target="_blank" href="">
+                <a target="_blank" href="https://twitter.com/AceBot_xyz">
                   <NavTwitter className="max-[640px]:w-[20px]" />
                 </a>
               </li>
               <li>
-                <a target="_blank" href="">
+                <a target="_blank" href="https://t.me/Fun_AceBot">
                   <NavTelegram className="max-[640px]:w-[20px]" />
                 </a>
               </li>
               <li>
-                <a target="_blank" href="">
+                <a target="_blank" href="https://acebot.gitbook.io/acedocs">
                   <NavGitbook className="max-[640px]:w-[20px]" />
                 </a>
               </li>
@@ -140,7 +140,7 @@ export default function Home() {
 
           <a
             target="_blank"
-            href=""
+            href="https://t.me/Fun_AceBot"
             className="m-auto flex items-center justify-center rounded-full mt-6 w-40 max-[640px]:w-32 h-11 max-[640px]:h-9 gap-2 text-xl max-[640px]:text-sm bg-play-button"
           >
             PLAY <PlayTelegram className="max-[640px]:w-[20px]" />
@@ -280,22 +280,25 @@ export default function Home() {
           MADE BY DEGENS AND SAVVY DEVS 🍼
           <ul className="ml-auto max-[640px]:ml-0 flex items-center gap-5">
             <li>
-              <a target="_blank" href="">
+              <a
+                target="_blank"
+                href="https://polygonscan.com/address/0x652d9ba0d07fc351157c55d6a2672e7a3fc19236"
+              >
                 <FooterEtherscan />
               </a>
             </li>
             <li>
-              <a target="_blank" href="">
+              <a target="_blank" href="https://twitter.com/AceBot_xyz">
                 <FooterTwitter />
               </a>
             </li>
             <li>
-              <a target="_blank" href="">
+              <a target="_blank" href="https://t.me/Fun_AceBot">
                 <FooterTelegram />
               </a>
             </li>
             <li>
-              <a target="_blank" href="">
+              <a target="_blank" href="https://acebot.gitbook.io/acedocs">
                 <FooterGitbook />
               </a>
             </li>
